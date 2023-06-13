@@ -1,30 +1,13 @@
-/**
- * @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config}
- **/
+
 const config = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
   extends: [
-    'eslint:recommended',
     'next',
     'next/core-web-vitals',
-    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    // Uncomment the following lines to enable eslint-config-prettier
-    // Is not enabled right now to avoid issues with the Next.js repo
-    // 'prettier',
+    'prettier'
   ],
-  env: {
-    es6: true,
-    browser: true,
-    jest: true,
-    node: true,
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+
+
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/display-name': 0,

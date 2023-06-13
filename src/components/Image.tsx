@@ -1,11 +1,27 @@
-import NextImage, { ImageProps } from 'next/image'
+// 'use client'
 
-const customLoader = ({ src }: { src: string }) => {
-    return src
-}
+// import Image from 'next/image'
 
-const Image = (props: ImageProps) => {
-    return <NextImage {...props} loader={customLoader} />
-}
+// type ImageLoaderProps = {
+//     src: string;
+//     width?: number;
+//     quality?: string;
+// }
 
-export default Image
+// const imageLoader = ({ src, width, quality }: ImageLoaderProps) => {
+//     return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+//   }
+
+// type CustomImageProps = {
+
+// }
+
+// const CustomImage (props) {
+//   return (
+//     <Image
+//     {...props}
+//       loader={imageLoader}
+//     />
+//   )
+// }
+// export default CustomImage

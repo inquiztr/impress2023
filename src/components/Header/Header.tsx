@@ -3,10 +3,13 @@ import Link from 'next/link'
 import styles from './header.module.scss'
 import { Montserrat } from 'next/font/google'
 import logo from '/public/impress-logo.png'
-import Image from '@/components/Image'
+//import Image from '@/components/Image'
+import Image from 'next/image'
 
-export const font = Montserrat({
+const font = Montserrat({
     subsets: ['latin'],
+    weight: '400',
+    display: 'swap',
 })
 
 export default function Header() {
@@ -15,17 +18,17 @@ export default function Header() {
             <div className={styles.header}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        {/* <Image
+                        <Image
                             src={logo}
                             alt="Impressionable Gifts1"
                             width="200"
                             height="53"
                             priority
                             className={styles.logoImage}
-                        /> */}
+                        />
                     </Link>
                 </div>
-                <div className={styles.nav}>
+                <div className={styles.nav} style={{ display: 'none' }}>
                     <ul
                         id="nav"
                         className={styles.navMobile + ' ' + font.className}
@@ -47,7 +50,11 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-                <button type="button" className={styles.buttonToggleMenu}>
+                <button
+                    type="button"
+                    className={styles.buttonToggleMenu}
+                    style={{ display: 'none' }}
+                >
                     Menu
                 </button>
             </div>
