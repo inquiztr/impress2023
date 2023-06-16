@@ -2,7 +2,7 @@ import './globals.css'
 import { Montserrat } from 'next/font/google'
 import Header from '@/components/Header/Header'
 
-const fontf = Montserrat({
+const font = Montserrat({
     subsets: ['latin'],
     display: 'swap',
 })
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={fontf.className}>
+            <body className={font.className}>
                 <Header />
                 {children}
             </body>
