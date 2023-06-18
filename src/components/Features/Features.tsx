@@ -89,10 +89,11 @@ function Hero() {
                             of the community of Port Credit. Lydia loves to give
                             back to the neigbourhood where she grew up and still
                             lives. In 2011, as an example of such, Lydia
-                            organized a Diaper Drive from October 1st – 15th and
-                            every year, the community comes together to help the
-                            littlest ones in need. Over the years she has
-                            volunteered her time on several committees.
+                            organized a <b>Diaper Drive</b> from{' '}
+                            <b>October 1st - 15th</b> and every year, the
+                            community comes together to help the littlest ones
+                            in need. Over the years she has volunteered her time
+                            on several committees.
                         </p>
                     </div>
                     <div className={styles.featureRowRight}>
