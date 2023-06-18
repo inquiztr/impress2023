@@ -1,6 +1,7 @@
 .newsHeadline {
     background: #23292f;
     padding-top: 72px;
+    padding-bottom: 72px;
 }
 .newsHeadlineWrap {
     display: flex;
@@ -26,6 +27,10 @@
         color: #a9b5c0;
         font-size: 15px;
         font-weight: bold;
+    }
+    .heart {
+        color: #c4196e;
+        fill: #c4196e;
     }
 
     @media (min-width: 768px) {
