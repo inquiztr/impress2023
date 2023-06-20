@@ -1,9 +1,9 @@
-.newsHeadline {
-    background: #23292f;
-    padding-top: 72px;
-    padding-bottom: 72px;
+.galleryHeadline {
+    background: #fff url('/public/grey.png');
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
-.newsHeadlineWrap {
+.galleryWrap {
     display: flex;
     justify-content: center;
     margin: 0 30px;
@@ -27,26 +27,5 @@
         color: #a9b5c0;
         font-size: 15px;
         font-weight: bold;
-    }
-    .heart {
-        color: #c4196e;
-        fill: #c4196e;
-    }
-
-    @media (min-width: 768px) {
-        flex-direction: row;
-        h4 {
-            display: none;
-        }
-        .col1 {
-            width: 16.66667%;
-        }
-        .col2 {
-            width: 58.33333%;
-            text-align: left;
-        }
-        .col3 {
-            width: 25%;
-        }
     }
 }
