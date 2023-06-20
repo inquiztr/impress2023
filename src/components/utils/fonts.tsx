@@ -9,3 +9,7 @@ export const fontMontserrat = Montserrat({
     subsets: ['latin'],
     display: 'swap',
 })
+export const fontMontserratRegular = Montserrat({
+    subsets: ['latin'],
+    display: 'swap',
+})

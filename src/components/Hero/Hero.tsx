@@ -1,11 +1,6 @@
 import styles from './hero.module.scss'
 import Image from 'next/image'
-import { Open_Sans } from 'next/font/google'
-const font = Open_Sans({
-    subsets: ['latin'],
-    weight: '400',
-    display: 'swap',
-})
+import { fontMontserrat } from '../utils/fonts'
 function Hero() {
     return (
         <>
@@ -25,11 +20,11 @@ function Hero() {
                         />
                     </h1>
                     <div className={styles.heroText}>
-                        <h2>
+                        <h2 className={fontMontserrat.className}>
                             Wall Décor - Ladies Clothing - Jewellery - Accent
                             Furniture - Accessories
                         </h2>
-                        <p className={font.className}>
+                        <p>
                             At Impressionable Gifts, you will find exactly the
                             right gift for everyone on your gift giving list no
                             matter what the occasion. Or, perhaps you may want

@@ -20,17 +20,24 @@
     h5 {
         font-size: 25px;
         line-height: 36px;
-        margin-bottom: 30px;
-        letter-spacing: 3px;
+        margin-bottom: 12px;
+        color: #ebeeee;
+        font-weight: 600;
     }
     p {
         color: #a9b5c0;
         font-size: 15px;
         font-weight: bold;
+        margin-bottom: 30px;
     }
     .heart {
         color: #c4196e;
         fill: #c4196e;
+        display: none;
+        max-width: 77px;
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 
     @media (min-width: 768px) {

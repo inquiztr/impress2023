@@ -9,7 +9,7 @@ function Hero() {
         <>
             <section
                 id="feature"
-                className={`${styles.feature} ${fontMontserrat}`}
+                className={`${styles.feature} ${fontMontserrat.className}`}
             >
                 <div className={styles.featureRow}>
                     <div className={styles.featureRowLeft}>

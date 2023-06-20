@@ -30,6 +30,9 @@
         line-height: 24px;
         text-align: center;
         margin-bottom: 6px;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
     }
     .featureRowLeft {
         padding: 0 30px;

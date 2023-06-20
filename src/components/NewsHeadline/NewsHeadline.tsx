@@ -7,6 +7,7 @@ import { fontMontserrat, fontOpen } from '../utils/fonts'
 //     weight: '400',
 //     display: 'swap',
 // })
+
 function NewsHeadline() {
     return (
         <>
@@ -25,7 +26,9 @@ function NewsHeadline() {
                         </svg>
                     </div>
                     <div className={styles.col2}>
-                        <h5>25th Anniversary Celebration</h5>
+                        <h5 className={fontMontserrat.className}>
+                            25th Anniversary Celebration
+                        </h5>
                         <p className={fontOpen.className}>
                             Thurs, June 15th,
                             <br />
