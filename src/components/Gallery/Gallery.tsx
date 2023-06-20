@@ -1,5 +1,7 @@
 import styles from './gallery.module.scss'
 import { fontMontserrat, fontOpen } from '../utils/fonts'
+import Image from 'next/image'
+import grey from '../../../public/grey.png'
 function Gallery() {
     return (
         <>
@@ -8,6 +10,17 @@ function Gallery() {
                     <div className={styles.col1}>
                         <h4 className={fontMontserrat.className}>News</h4>
                     </div>
+                    {/* <Image
+                        alt="background"
+                        src={grey}
+                        placeholder="blur"
+                        quality={100}
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: 'cover',
+                        }}
+                    />   */}
                     <div className={styles.col2}>
                         <h5>25th Anniversary Celebration</h5>
                         <p className={fontOpen.className}>

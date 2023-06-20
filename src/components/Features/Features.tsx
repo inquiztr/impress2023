@@ -39,7 +39,7 @@ function Hero() {
                         <Image
                             src={store1}
                             alt="Photo of store shelving full of new weekly products"
-                            className={styles.heroImage}
+                            className={`${styles.heroImage} ${styles.featureImages}`}
                             width={1280}
                             height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -70,7 +70,7 @@ function Hero() {
                         <Image
                             src={store2}
                             alt="Photo of other store shelving full of new weekly products"
-                            className={styles.heroImage}
+                            className={`${styles.heroImage} ${styles.featureImages}`}
                             width={1280}
                             height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -100,7 +100,7 @@ function Hero() {
                         <Image
                             src={store3}
                             alt="Photo of new weekly products"
-                            className={styles.heroImage}
+                            className={`${styles.heroImage} ${styles.featureImages}`}
                             width={1280}
                             height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
