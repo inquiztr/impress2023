@@ -16,6 +16,7 @@
         margin-bottom: 30px;
         text-transform: uppercase;
         letter-spacing: 3px;
+        color: #000;
     }
     h5 {
         font-size: 25px;
@@ -27,5 +28,103 @@
         color: #a9b5c0;
         font-size: 15px;
         font-weight: bold;
+    }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .image {
+        padding-bottom: 50%;
+        width: 50%;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    /* CSS for the cross */
+    .overlay::before,
+    .overlay::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 7%;
+        height: 4px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .overlay::before {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    .overlay::after {
+        transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    .image:hover .overlay::before,
+    .image:hover .overlay::after {
+        opacity: 1;
+    }
+
+    /* Tablet breakpoint */
+    @media (min-width: 768px) {
+        .grid {
+            margin: 0;
+        }
+
+        .image {
+            width: calc(33.33% - 20px);
+            padding-bottom: calc(33.33% - 20px);
+        }
+    }
+
+    /* Desktop breakpoint */
+    @media (min-width: 1024px) {
+        .grid {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .image {
+            width: calc(25% - 20px);
+            padding-bottom: calc(25% - 20px);
+        }
+    }
+
+    /* Image hover effect */
+    .image:hover img {
+        transform: scale(1.2);
+    }
+
+    .image:hover .overlay {
+        opacity: 0.8;
     }
 }
