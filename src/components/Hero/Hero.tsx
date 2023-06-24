@@ -1,5 +1,6 @@
 import styles from './hero.module.scss'
 import Image from 'next/image'
+import impressLogo from './impress-logo2.png'
 import { fontMontserrat } from '../utils/fonts'
 function Hero() {
     return (
@@ -11,10 +12,9 @@ function Hero() {
                             Impressionable Gifts
                         </span>
                         <Image
-                            src="/impress-logo2.png"
+                            src={impressLogo}
                             alt="Impressionable Gifts"
-                            width="420"
-                            height="123"
+                            placeholder="blur"
                             //className={styles.heroImage}
                             priority
                         />

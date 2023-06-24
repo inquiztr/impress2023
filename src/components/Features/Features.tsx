@@ -40,8 +40,8 @@ function Hero() {
                             src={store1}
                             alt="Photo of store shelving full of new weekly products"
                             className={`${styles.heroImage} ${styles.featureImages}`}
-                            width={1280}
-                            height={960}
+                            width={418}
+                            height={314}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{
                                 width: '100%',
