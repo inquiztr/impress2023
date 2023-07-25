@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "opt": "next-image-export-optimizer"
   },
   "dependencies": {
     "@types/node": "20.3.0",
@@ -26,6 +27,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "fs": "^0.0.1-security",
+    "next-image-export-optimizer": "^1.8.1",
     "prettier": "^2.8.8"
   }
 }

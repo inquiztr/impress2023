@@ -10,6 +10,7 @@ import ee from './june06.jpg'
 import ff from './june07.jpg'
 import gg from './june08.jpg'
 import hh from './june09.jpg'
+import ExportedImage from 'next-image-export-optimizer'
 function Gallery() {
     return (
         <>
@@ -18,11 +19,10 @@ function Gallery() {
                     <div className={styles.col1}>
                         <h4 className={fontMontserrat.className}>Gallery</h4>
                     </div>
-                    {/* <Image
+                    {/* <ExportedImage
                         alt="background"
                         src={grey}
                         placeholder="blur"
-                        quality={100}
                         fill
                         sizes="100vw"
                         style={{
@@ -32,11 +32,10 @@ function Gallery() {
 
                     <div className={styles.grid}>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={aa}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -46,11 +45,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={bb}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -60,11 +58,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={cc}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -74,11 +71,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={dd}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -88,11 +84,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={ee}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -102,11 +97,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={ff}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -116,11 +110,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={gg}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{
@@ -130,11 +123,10 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.image}>
-                            <Image
+                            <ExportedImage
                                 alt="store products"
                                 src={hh}
                                 placeholder="blur"
-                                quality={100}
                                 width="250"
                                 height="250"
                                 style={{

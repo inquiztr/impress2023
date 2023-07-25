@@ -2,6 +2,7 @@ import styles from './hero.module.scss'
 import Image from 'next/image'
 import impressLogo from './impress-logo2.png'
 import { fontMontserrat } from '../utils/fonts'
+import ExportedImage from 'next-image-export-optimizer'
 function Hero() {
     return (
         <>
@@ -11,11 +12,11 @@ function Hero() {
                         <span className="visually-hidden">
                             Impressionable Gifts
                         </span>
-                        <Image
+                        <ExportedImage
                             src={impressLogo}
                             alt="Impressionable Gifts"
                             placeholder="blur"
-                            //className={styles.heroImage}
+                            className={styles.heroImage}
                             priority
                         />
                     </h1>

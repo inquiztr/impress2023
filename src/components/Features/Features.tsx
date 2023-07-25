@@ -1,9 +1,11 @@
 import styles from './features.module.scss'
 import Image from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 import { fontMontserrat, fontOpen } from '../utils/fonts'
 import store1 from './store01.jpg'
 import store2 from './store02.jpg'
 import store3 from './store03.jpg'
+
 function Hero() {
     return (
         <>
@@ -36,17 +38,17 @@ function Hero() {
                         </p>
                     </div>
                     <div className={styles.featureRowRight}>
-                        <Image
+                        <ExportedImage
                             src={store1}
-                            alt="Photo of store shelving full of new weekly products"
                             className={`${styles.heroImage} ${styles.featureImages}`}
+                            alt="Photo of store shelving full of new weekly products"
                             width={418}
                             height={314}
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{
                                 width: '100%',
                                 height: 'auto',
                             }}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                 </div>
@@ -67,7 +69,7 @@ function Hero() {
                         className={styles.featureRowRight}
                         style={{ order: 2 }}
                     >
-                        <Image
+                        <ExportedImage
                             src={store2}
                             alt="Photo of other store shelving full of new weekly products"
                             className={`${styles.heroImage} ${styles.featureImages}`}
@@ -97,7 +99,7 @@ function Hero() {
                         </p>
                     </div>
                     <div className={styles.featureRowRight}>
-                        <Image
+                        <ExportedImage
                             src={store3}
                             alt="Photo of new weekly products"
                             className={`${styles.heroImage} ${styles.featureImages}`}

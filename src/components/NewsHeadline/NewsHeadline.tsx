@@ -2,6 +2,7 @@ import styles from './newsheadline.module.scss'
 import Image from 'next/image'
 import headlineImage from './savethedate2.jpg'
 import { fontMontserrat, fontOpen } from '../utils/fonts'
+import ExportedImage from 'next-image-export-optimizer'
 // const font = fontMontserrat({
 //     subsets: ['latin'],
 //     weight: '400',
@@ -37,13 +38,13 @@ function NewsHeadline() {
                     </div>
                     <div className={styles.col3}>
                         <a href="">
-                            <Image
+                            <ExportedImage
                                 src={headlineImage}
                                 alt=""
                                 width="150"
                                 height="140"
                             />
-                        </a>{' '}
+                        </a>
                     </div>
                 </div>
             </section>

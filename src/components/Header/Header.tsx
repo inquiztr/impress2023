@@ -5,7 +5,7 @@ import { Montserrat } from 'next/font/google'
 import logo from '/public/impress-logo.png'
 //import Image from '@/components/Image'
 import Image from 'next/image'
-
+import ExportedImage from 'next-image-export-optimizer'
 const font = Montserrat({
     subsets: ['latin'],
     weight: '400',
@@ -18,7 +18,7 @@ export default function Header() {
             <div className={styles.header}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        <Image
+                        <ExportedImage
                             src={logo}
                             alt="Impressionable Gifts1"
                             width="200"
