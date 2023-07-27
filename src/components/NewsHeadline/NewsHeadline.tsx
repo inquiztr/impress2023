@@ -1,5 +1,4 @@
 import styles from './newsheadline.module.scss'
-import Image from 'next/image'
 import headlineImage from './savethedate2.jpg'
 import { fontMontserrat, fontOpen } from '../utils/fonts'
 import ExportedImage from 'next-image-export-optimizer'

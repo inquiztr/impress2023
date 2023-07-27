@@ -1,7 +1,6 @@
 import styles from './features.module.scss'
-import Image from 'next/image'
 import ExportedImage from 'next-image-export-optimizer'
-import { fontMontserrat, fontOpen } from '../utils/fonts'
+import { fontMontserrat } from '../utils/fonts'
 import store1 from './store01.jpg'
 import store2 from './store02.jpg'
 import store3 from './store03.jpg'

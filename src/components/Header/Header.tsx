@@ -3,8 +3,6 @@ import Link from 'next/link'
 import styles from './header.module.scss'
 import { Montserrat } from 'next/font/google'
 import logo from '/public/impress-logo.png'
-//import Image from '@/components/Image'
-import Image from 'next/image'
 import ExportedImage from 'next-image-export-optimizer'
 const font = Montserrat({
     subsets: ['latin'],

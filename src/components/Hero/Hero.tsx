@@ -1,5 +1,4 @@
 import styles from './hero.module.scss'
-import Image from 'next/image'
 import impressLogo from './impress-logo2.png'
 import { fontMontserrat } from '../utils/fonts'
 import ExportedImage from 'next-image-export-optimizer'

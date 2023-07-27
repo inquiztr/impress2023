@@ -3,6 +3,7 @@ import Hero from '@/components/Hero/Hero'
 import Features from '@/components/Features/Features'
 import NewsHeadline from '@/components/NewsHeadline/NewsHeadline'
 import Gallery from '@/components/Gallery/Gallery'
+import Testimonial from '@/components/Testimonial/Testimonial'
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                 <Features />
                 <NewsHeadline />
                 <Gallery />
+                <Testimonial />
             </div>
         </main>
     )
