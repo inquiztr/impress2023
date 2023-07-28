@@ -2,6 +2,67 @@
     background: #72234a;
     padding-top: 112px;
     padding-bottom: 66px;
+    text-align: center;
+
+    h3 {
+        font: 16px/24px 'montserrat-bold', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 36px;
+        color: #e6c1e3;
+    }
+
+    blockquote {
+        margin-bottom: 30px;
+    }
+
+    blockquote p {
+        font-family: 'opensans-semibold', sans-serif;
+        font-style: normal;
+        color: #fff;
+        padding: 0;
+
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 27px;
+        @media (min-width: 481px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @media (min-width: 768px) {
+            font-size: 26px;
+            line-height: 42px;
+        }
+        @media (min-width: 768px) {
+            font-size: 26px;
+            line-height: 42px;
+        }
+        @media (min-width: 768px) {
+            font-size: 26px;
+            line-height: 42px;
+        }
+    }
+    blockquote cite {
+        display: block;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+        color: #fff;
+    }
+    .sliderWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .sliderLeft {
+            width: 80px;
+        }
+        .sliderCenter {
+            width: calc(100% - 160px);
+        }
+        .sliderRight {
+            width: 80px;
+        }
+    }
 }
 .newsHeadlineWrap {
     display: flex;
