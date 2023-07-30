@@ -1,6 +1,5 @@
 import styles from './hero.module.scss'
 import impressLogo from './impress-logo2.png'
-import { fontMontserrat } from '../utils/fonts'
 import ExportedImage from 'next-image-export-optimizer'
 function Hero() {
     return (
@@ -20,7 +19,7 @@ function Hero() {
                         />
                     </h1>
                     <div className={styles.heroText}>
-                        <h2 className={fontMontserrat.className}>
+                        <h2 className="fontMont">
                             Wall Décor - Ladies Clothing - Jewellery - Accent
                             Furniture - Accessories
                         </h2>

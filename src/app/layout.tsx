@@ -1,5 +1,5 @@
 import './globals.css'
-import { fontOpen } from '@/components/utils/fonts'
+import { fontMont, fontMontReg, fontOpen } from '@/app/styles/fonts'
 import Header from '@/components/Header/Header'
 
 export const metadata = {
@@ -14,8 +14,11 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <body className={fontOpen.className}>
+        <html
+            lang="en"
+            className={`${fontOpen.className} ${fontMont.variable}`}
+        >
+            <body>
                 <Header />
                 {children}
             </body>

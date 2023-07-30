@@ -117,3 +117,10 @@ a {
   white-space: nowrap;
   width: 1px;
 }
+
+.fontMont {
+  font-family: var(--font-montserrat);
+}
+.fontMontReg{
+  font-family: var(--font-montserrat-reg);
+}

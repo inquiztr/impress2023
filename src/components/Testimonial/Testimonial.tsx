@@ -4,7 +4,6 @@ import styles from './testimonial.module.scss'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation, A11y } from 'swiper/modules'
-import { fontMontserrat } from '../utils/fonts'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -13,7 +12,7 @@ function Testimonial() {
     return (
         <>
             <section id="testmonial" className={styles.testimonial}>
-                <h3>What people are saying</h3>
+                <h3 className="fontMont">What people are saying</h3>
                 <div className={styles.sliderWrap}>
                     <div className={styles.sliderLeft}>
                         <svg
@@ -31,6 +30,9 @@ function Testimonial() {
                             slidesPerView={1}
                             loop={true}
                             autoHeight={true}
+                            pagination={{
+                                clickable: true,
+                            }}
                             modules={[Navigation, Pagination, A11y]}
                             onSlideChange={() => console.log('slide change')}
                             onSwiper={(swiper) => console.log(swiper)}

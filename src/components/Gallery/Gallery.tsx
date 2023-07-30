@@ -1,5 +1,4 @@
 import styles from './gallery.module.scss'
-import { fontMontserrat } from '../utils/fonts'
 //import grey from '../../../public/grey.png'
 import aa from './june02.jpg'
 import bb from './june03.jpg'
@@ -16,7 +15,7 @@ function Gallery() {
             <section id="gallery" className={styles.galleryHeadline}>
                 <div className={styles.galleryWrap}>
                     <div className={styles.col1}>
-                        <h4 className={fontMontserrat.className}>Gallery</h4>
+                        <h4 className="fontMont"> Gallery</h4>
                     </div>
                     {/* <ExportedImage
                         alt="background"

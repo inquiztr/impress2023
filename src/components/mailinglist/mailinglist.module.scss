@@ -33,10 +33,13 @@
         }
     }
     p {
-        color: #a9b5c0;
+        color: #697b8b;
         font-size: 15px;
         font-weight: 600;
         margin-bottom: 30px;
+        span {
+            color: #a9b5c0;
+        }
     }
     .heart {
         color: #c4196e;
@@ -46,6 +49,29 @@
         @media (min-width: 768px) {
             display: block;
         }
+    }
+    .button {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        background: #c4186e;
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 0;
+        padding: 12px 20px;
+        margin-bottom: 18px;
+        border: none;
+        cursor: pointer;
+        height: auto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.2s ease-in-out;
+        border-radius: 3px;
+    }
+    .col2 {
+        max-width: 420px;
+        margin: 0 auto;
     }
 
     @media (min-width: 768px) {
@@ -59,6 +85,9 @@
         .col2 {
             width: 58.33333%;
             text-align: left;
+            max-width: inherit;
+            margin: 0;
+            padding-right: 20px;
         }
         .col3 {
             width: 25%;

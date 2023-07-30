@@ -1,14 +1,13 @@
-import styles from './newsheadline.module.scss'
-import headlineImage from './savethedate2.jpg'
+import styles from './mailinglist.module.scss'
 import ExportedImage from 'next-image-export-optimizer'
 
-function NewsHeadline() {
+function Mailinglist() {
     return (
         <>
             <section id="newsHeadline" className={styles.newsHeadline}>
                 <div className={styles.newsHeadlineWrap}>
                     <div className={styles.col1}>
-                        <h4 className="fontMont">News</h4>
+                        <h4 className="fontMont">Join us</h4>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             height="96"
@@ -20,23 +19,24 @@ function NewsHeadline() {
                         </svg>
                     </div>
                     <div className={styles.col2}>
-                        <h5 className="fontMont">
-                            25th Anniversary Celebration
-                        </h5>
+                        <h5 className="fontMont">Join our mailing list</h5>
                         <p>
-                            Thurs, June 15th,
+                            Sign up to our email list and be the first to know
+                            of our upcoming event, and promotions and exciting
+                            news.
                             <br />
-                            6pm - 10pm
+                            <span>
+                                Your email will be kept confidential and you can
+                                unsubscribe at any time.
+                            </span>
                         </p>
                     </div>
-                    <div className={styles.col3}>
-                        <a href="">
-                            <ExportedImage
-                                src={headlineImage}
-                                alt=""
-                                width="150"
-                                height="140"
-                            />
+                    <div>
+                        <a
+                            className={styles.button}
+                            href="mailto:impressgifts@on.aibn.com?subject=Subscribe"
+                        >
+                            Join us
                         </a>
                     </div>
                 </div>
@@ -45,4 +45,4 @@ function NewsHeadline() {
     )
 }
 
-export default NewsHeadline
+export default Mailinglist

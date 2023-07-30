@@ -1,22 +1,15 @@
 import styles from './features.module.scss'
 import ExportedImage from 'next-image-export-optimizer'
-import { fontMontserrat } from '../utils/fonts'
 import store1 from './store01.jpg'
 import store2 from './store02.jpg'
 import store3 from './store03.jpg'
-
 function Hero() {
     return (
         <>
-            <section
-                id="feature"
-                className={`${styles.feature} ${fontMontserrat.className}`}
-            >
+            <section id="feature" className={`${styles.feature}`}>
                 <div className={styles.featureRow}>
                     <div className={styles.featureRowLeft}>
-                        <h3 className={styles.feature1}>
-                            Every Customer is Special.
-                        </h3>
+                        <h3 className="fontMont">Every Customer is Special.</h3>
                         <p className={styles.featureText}>
                             From a passion that started at a very young age,
                             Lydia&apos;s goal was to open an affordable gift and
@@ -53,7 +46,7 @@ function Hero() {
                 </div>
                 <div className={styles.featureRow}>
                     <div className={styles.featureRowLeft} style={{ order: 1 }}>
-                        <h3 className={styles.feature1}>Welcoming.</h3>
+                        <h3 className="fontMont">Welcoming.</h3>
                         <p className={styles.featureText}>
                             At Impressionable Gifts & Decor, you will receive
                             the utmost in customer service, quality, and price.
@@ -84,7 +77,7 @@ function Hero() {
                 </div>
                 <div className={styles.featureRow}>
                     <div className={styles.featureRowLeft}>
-                        <h3 className={styles.feature1}>Giving Back.</h3>
+                        <h3 className="fontMont">Giving Back.</h3>
                         <p className={styles.featureText}>
                             Impressionable Gifts & Décor is proud to be a part
                             of the community of Port Credit. Lydia loves to give
