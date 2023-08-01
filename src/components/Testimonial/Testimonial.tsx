@@ -102,39 +102,6 @@ function Testimonial() {
                                     <cite>Brooke. - 5 star Google review.</cite>
                                 </blockquote>
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <blockquote>
-                                    <p>
-                                        I wander into this store last week and
-                                        had the most amazing experience. I loved
-                                        the items sold and the energy in the
-                                        store was magical. Lydia, offered a few
-                                        ideas that resonated with me and I left
-                                        feeling happy with what I bought. Funny
-                                        thing is I wasn&apos;t looking for any
-                                        particular gifts. I would highly
-                                        recommend visiting the store, you
-                                        won&apos;t be disappointed.
-                                    </p>
-                                    <cite>
-                                        Jacqueline G - 5 star Facebook review.
-                                    </cite>
-                                </blockquote>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <blockquote>
-                                    <p>
-                                        I almost don&apos;t want to post this
-                                        because the prices are SO great!! Also
-                                        lots of local products...honestly no
-                                        better place to find gifts, jewelry,
-                                        clothes and decor items. The owner is
-                                        awesome too! 👌 One of the sweetest and
-                                        honest.
-                                    </p>
-                                    <cite>Cathi K - 5 star Google review.</cite>
-                                </blockquote>
-                            </SwiperSlide>
                         </Swiper>
                     </div>
                     <div className={styles.sliderRight}>

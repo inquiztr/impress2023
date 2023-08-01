@@ -1,10 +1,9 @@
 import styles from './mailinglist.module.scss'
-import ExportedImage from 'next-image-export-optimizer'
 
 function Mailinglist() {
     return (
         <>
-            <section id="newsHeadline" className={styles.newsHeadline}>
+            <section id="mailingList" className={styles.newsHeadline}>
                 <div className={styles.newsHeadlineWrap}>
                     <div className={styles.col1}>
                         <h4 className="fontMont">Join us</h4>
