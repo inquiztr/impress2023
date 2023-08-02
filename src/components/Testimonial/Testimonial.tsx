@@ -88,7 +88,7 @@ function Testimonial() {
                             <SwiperSlide>
                                 <blockquote>
                                     <p>
-                                        I'm in love with this little shop!
+                                        I&apos;m in love with this little shop!
                                         It&apos;s a great place to find anything
                                         and everything. The owner is friendly
                                         and very sociable and I love the

@@ -1,7 +1,7 @@
 import './globals.css'
-import { fontMont, fontMontReg, fontOpen } from '@/app/styles/fonts'
+import { fontMont, fontOpen } from '@/app/styles/fonts'
 import Header from '@/components/Header/Header'
-
+import Footer from '@/components/Footer/Footer'
 export const metadata = {
     title: 'Impressionable Gifts',
     description:
@@ -21,6 +21,7 @@ export default function RootLayout({
             <body>
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     )
