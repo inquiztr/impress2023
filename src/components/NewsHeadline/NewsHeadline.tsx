@@ -1,8 +1,26 @@
+'use client'
+import React, { useEffect } from 'react'
 import styles from './newsheadline.module.scss'
 import headlineImage from './savethedate2.jpg'
 import ExportedImage from 'next-image-export-optimizer'
+import PhotoSwipeLightbox from 'photoswipe/lightbox'
+import 'photoswipe/style.css'
 
 function NewsHeadline() {
+    useEffect(() => {
+        let lightbox = new PhotoSwipeLightbox({
+            gallery: '#' + 'newsgallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: { top: 30, bottom: 30, left: 10, right: 10 },
+        })
+        lightbox.init()
+
+        return () => {
+            lightbox.destroy()
+            lightbox = null
+        }
+    }, [])
     return (
         <>
             <section id="newsHeadline" className={styles.newsHeadline}>
@@ -29,11 +47,19 @@ function NewsHeadline() {
                             6pm - 10pm
                         </p>
                     </div>
-                    <div className={styles.col3}>
-                        <a href="">
+                    <div className={styles.col3} id="newsgallery">
+                        <a
+                            href={headlineImage.src}
+                            data-pswp-width={headlineImage.width}
+                            data-pswp-height={headlineImage.height}
+                            key={'news1'}
+                            className={styles.image}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <ExportedImage
                                 src={headlineImage}
-                                alt=""
+                                alt="25th Anniversary Celebration"
                                 width="150"
                                 height="140"
                             />

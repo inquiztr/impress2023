@@ -28,7 +28,9 @@
     "fs": "^0.0.1-security",
     "next": "^13.4.12",
     "next-image-export-optimizer": "^1.8.3",
+    "photoswipe": "^5.3.8",
     "prettier": "^2.8.8",
-    "swiper": "^10.0.4"
+    "react-photoswipe-gallery": "^2.2.7",
+    "swiper": "^10.1.0"
   }
 }
