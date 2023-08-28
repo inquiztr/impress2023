@@ -115,7 +115,9 @@ function Footer() {
             </div>
             <div className={styles.copyright}>
                 © 2023 Impressionable Gifts | Design by{' '}
-                <a href="https://www.sanborg.com/">Sanborg</a>
+                <a href="https://www.sanborg.com/" rel="nofollow">
+                    Sanborg
+                </a>
             </div>
             <div className={styles.goTop} id="goTop">
                 <a className="smoothscroll" title="Back to Top" href="#hero">
