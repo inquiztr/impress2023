@@ -16,7 +16,7 @@ import ExportedImage from 'next-image-export-optimizer'
 
 function Gallery() {
     useEffect(() => {
-        let lightbox = new PhotoSwipeLightbox({
+        const lightbox = new PhotoSwipeLightbox({
             gallery: '#' + 'aaa',
             children: 'a',
             pswpModule: () => import('photoswipe'),
@@ -26,7 +26,7 @@ function Gallery() {
 
         return () => {
             lightbox.destroy()
-            lightbox = null
+            //lightbox = null
         }
     }, [])
 

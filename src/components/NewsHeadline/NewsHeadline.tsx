@@ -8,7 +8,7 @@ import 'photoswipe/style.css'
 
 function NewsHeadline() {
     useEffect(() => {
-        let lightbox = new PhotoSwipeLightbox({
+        const lightbox = new PhotoSwipeLightbox({
             gallery: '#' + 'newsgallery',
             children: 'a',
             pswpModule: () => import('photoswipe'),
@@ -18,7 +18,7 @@ function NewsHeadline() {
 
         return () => {
             lightbox.destroy()
-            lightbox = null
+            //lightbox = null
         }
     }, [])
     return (
