@@ -1,14 +1,35 @@
-import * as React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import styles from './header.module.scss'
 import logo from '/public/impress-logo.png'
 import ExportedImage from 'next-image-export-optimizer'
 import menuicon from '/public/menuicon.svg'
-import twitter from '/public/twitter.svg'
-import facebook from '/public/facebook.svg'
-import instagram from '/public/instagram.svg'
-
+import { usePathname, useSearchParams } from 'next/navigation'
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false)
+    const pathname = usePathname()
+    const searchParams = useSearchParams()
+
+    useEffect(() => {
+        // close mobile nav when resizing window
+        const mediaQueryList = window.matchMedia('(min-width: 768px)')
+        const handleChange = () => {
+            setIsOpen((isOpen) => (isOpen ? !mediaQueryList.matches : false))
+        }
+        handleChange()
+        mediaQueryList.addEventListener('change', handleChange)
+        return () => mediaQueryList.removeEventListener('change', handleChange)
+    }, [])
+
+    useEffect(() => {
+        // close mobile nav when pressing a nav link
+        const handleRouteChangeStart = () => {
+            setIsOpen(false)
+        }
+        handleRouteChangeStart()
+    }, [pathname, searchParams])
+
     return (
         <>
             <div className={styles.header}>
@@ -92,7 +113,15 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-                <button type="button" className={styles.buttonToggleMenu}>
+                <button
+                    type="button"
+                    className={styles.buttonToggleMenu}
+                    onClick={() => {
+                        setIsOpen((isOpen) => {
+                            return !isOpen
+                        })
+                    }}
+                >
                     <ExportedImage
                         src={menuicon}
                         width={33}
@@ -100,23 +129,25 @@ export default function Header() {
                         placeholder="empty"
                     />
                 </button>
-                <div className={styles.navMobile}>
-                    <ul id="nav" className={styles.navDesktop}>
-                        <li className="fontMont">
-                            <Link href="/">Home</Link>
-                        </li>
-                        <li className="fontMont">
-                            <Link href="/news">News</Link>
-                        </li>
-                        <li className="fontMont">
-                            <Link href="/#gallery">Gallery</Link>
-                        </li>
-                        <li className="fontMont">
-                            <Link href="/#gallery">Contact Us</Link>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            <ul
+                id="navMobile"
+                className={styles.navMobile}
+                style={{ top: isOpen ? '65px' : '-200px' }}
+            >
+                <li className="fontMont">
+                    <Link href="/">Home</Link>
+                </li>
+                <li className="fontMont">
+                    <Link href="/news">News</Link>
+                </li>
+                <li className="fontMont">
+                    <Link href="/#gallery">Gallery</Link>
+                </li>
+                <li className="fontMont">
+                    <Link href="/#gallery">Contact Us</Link>
+                </li>
+            </ul>
         </>
     )
 }

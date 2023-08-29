@@ -107,9 +107,8 @@
                 }
             }
         }
-        ul.navMobile {
-        }
     }
+
     .buttonToggleMenu {
         text-align: left;
         border: none;
@@ -127,6 +126,48 @@
         padding-top: 15px;
         @media (min-width: 768px) {
             display: none;
+        }
+    }
+}
+ul.navMobile {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: 24px 36px 48px 36px;
+    background: #1d2025;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #2e2e2e;
+    top: -200px;
+    box-shadow: 0px 4px 6px -1px #0f0f0f;
+    transition: top 0.3s ease-in-out;
+    z-index: 2;
+    li {
+        display: block;
+        height: auto;
+        text-align: left;
+        border-bottom: 1px solid #2d2e34;
+        border-bottom-style: dotted;
+        &:last-child {
+            border: none;
+        }
+        a {
+            color: #fff;
+            display: block;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            margin: 12px 0;
+            line-height: 16px;
+            border: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+            &:hover {
+                color: #ff78b9;
+            }
         }
     }
 }
