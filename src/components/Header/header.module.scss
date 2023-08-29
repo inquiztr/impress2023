@@ -7,6 +7,7 @@
     top: 0;
     z-index: 990;
     display: flex;
+    box-shadow: 0px 4px 6px -1px #00000054;
     justify-content: space-between;
 
     .logo {
@@ -139,7 +140,7 @@ ul.navMobile {
     width: 100%;
     border-bottom: 1px solid #2e2e2e;
     top: -200px;
-    box-shadow: 0px 4px 6px -1px #0f0f0f;
+    box-shadow: 0px 4px 6px -1px #00000054;
     transition: top 0.3s ease-in-out;
     z-index: 2;
     li {
