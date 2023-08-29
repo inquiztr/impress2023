@@ -34,8 +34,6 @@ function Testimonial() {
                                 clickable: true,
                             }}
                             modules={[Navigation, Pagination, A11y]}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
                         >
                             <SwiperSlide>
                                 <blockquote>
