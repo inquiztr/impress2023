@@ -12,6 +12,7 @@ import pic07 from './pic07.jpg'
 import pic08 from './pic08.jpg'
 import pic09 from './pic09.jpg'
 import pic10 from './pic10.png'
+import savethedate from './savethedate2.jpg'
 
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css'
@@ -47,6 +48,36 @@ export default function Home() {
                 <h1 className="fontMont">News</h1>
 
                 <div className={styles.newsList} id="gallery">
+                    <div className={styles.newsItem}>
+                        <div className={styles.left}>
+                            <h2 className="fontMont">
+                                25th Anniversary Celebration
+                            </h2>
+                            <p>
+                                Thurs, June 15th,
+                                <br />
+                                6pm - 10pm
+                            </p>
+                        </div>
+                        <div className={styles.right}>
+                            <a
+                                href={savethedate.src}
+                                data-pswp-width={savethedate.width}
+                                data-pswp-height={savethedate.height}
+                                key={'news01'}
+                                className={styles.image}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <ExportedImage
+                                    src={savethedate}
+                                    alt="25th Anniversary Celebration"
+                                    width="100"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
                     <div className={styles.newsItem}>
                         <div className={styles.left}>
                             <h2 className="fontMont">

@@ -38,6 +38,15 @@
         font-weight: 600;
         margin-bottom: 30px;
     }
+    .star {
+        color: #fff;
+        fill: #fff;
+        display: none;
+        max-width: 77px;
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
     .heart {
         color: #c4196e;
         fill: #c4196e;
