@@ -65,6 +65,7 @@
                     border: none;
                     outline: none;
                 }
+
                 &.logos {
                     display: block;
 
@@ -104,6 +105,9 @@
                 font-weight: 600;
                 transition: color 0.3s ease-in-out;
                 &:hover {
+                    color: #ff78b9;
+                }
+                &.active {
                     color: #ff78b9;
                 }
             }
@@ -167,6 +171,9 @@ ul.navMobile {
             font-weight: 500;
             transition: color 0.3s ease-in-out;
             &:hover {
+                color: #ff78b9;
+            }
+            &.active {
                 color: #ff78b9;
             }
         }

@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react'
 import styles from './page.module.scss'
 import ExportedImage from 'next-image-export-optimizer'
-import headlineImage from './savethedate2.jpg'
 import pic01 from './pic01.jpg'
 import pic02 from './pic02.jpg'
 import pic03 from './pic03.jpg'
@@ -13,10 +12,17 @@ import pic07 from './pic07.jpg'
 import pic08 from './pic08.jpg'
 import pic09 from './pic09.jpg'
 import pic10 from './pic10.png'
-import pic11 from './pic11.png'
 
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css'
+
+declare global {
+    interface Window {
+        FB: {
+            XFBML: any
+        }
+    }
+}
 
 export default function Home() {
     useEffect(() => {
@@ -27,6 +33,8 @@ export default function Home() {
             padding: { top: 30, bottom: 30, left: 10, right: 10 },
         })
         lightbox.init()
+
+        // window.FB.XFBML.parse()
 
         return () => {
             lightbox.destroy()
@@ -126,6 +134,32 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
+                    {/* --- */}
+                    <div className={styles.newsItem}>
+                        <div className={styles.left}>
+                            <h2 className="fontMont">
+                                Celebrating our 23rd Anniversary!
+                            </h2>
+                            <div className={styles.aspect}>
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FImpressionableGiftsAndDecor%2Fvideos%2F918190712089734%2F&show_text=false&width=auto&t=0"
+                                    width="560"
+                                    height="315"
+                                    style={{
+                                        border: 'none',
+                                        overflow: 'hidden',
+                                        width: '100%',
+                                        height: '100%',
+                                    }}
+                                    scrolling="no"
+                                    frameBorder="0"
+                                    allowFullScreen={true}
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    {/* --- */}
 
                     <div className={styles.newsItem}>
                         <div className={styles.left}>

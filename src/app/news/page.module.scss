@@ -61,4 +61,13 @@
             }
         }
     }
+    .aspect {
+        aspect-ratio: 16/10;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 4px;
+        border: 1px solid #6f6f6f;
+        box-shadow: 3px 3px 3px #e1e1e1;
+        margin-bottom: 20px;
+    }
 }

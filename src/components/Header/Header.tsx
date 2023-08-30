@@ -50,16 +50,28 @@ export default function Header() {
                 <div className={styles.nav}>
                     <ul id="nav" className={styles.navDesktop}>
                         <li className="fontMont">
-                            <Link href="/">Home</Link>
+                            <Link
+                                href="/"
+                                className={pathname == '/' ? styles.active : ''}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li className="fontMont">
-                            <Link href="/news">News</Link>
+                            <Link
+                                href="/news"
+                                className={
+                                    pathname == '/news' ? styles.active : ''
+                                }
+                            >
+                                News
+                            </Link>
                         </li>
                         <li className="fontMont">
                             <Link href="/#gallery">Gallery</Link>
                         </li>
                         <li className="fontMont">
-                            <Link href="/#gallery">Contact Us</Link>
+                            <Link href="/#footer">Contact Us</Link>
                         </li>
                         <li className={styles.spacer}></li>
                         <li className={styles.logos}>
@@ -136,10 +148,20 @@ export default function Header() {
                 style={{ top: isOpen ? '65px' : '-200px' }}
             >
                 <li className="fontMont">
-                    <Link href="/">Home</Link>
+                    <Link
+                        href="/"
+                        className={pathname == '/' ? styles.active : ''}
+                    >
+                        Home
+                    </Link>
                 </li>
                 <li className="fontMont">
-                    <Link href="/news">News</Link>
+                    <Link
+                        href="/news"
+                        className={pathname == '/news' ? styles.active : ''}
+                    >
+                        News
+                    </Link>
                 </li>
                 <li className="fontMont">
                     <Link href="/#gallery">Gallery</Link>

@@ -120,7 +120,7 @@ function Footer() {
                 </a>
             </div>
             <div className={styles.goTop} id="goTop">
-                <a className="smoothscroll" title="Back to Top" href="#hero">
+                <a className="smoothscroll" title="Back to Top" href="#top">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
