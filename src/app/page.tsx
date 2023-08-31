@@ -5,11 +5,13 @@ import NewsHeadline from '@/components/NewsHeadline/NewsHeadline'
 import Gallery from '@/components/Gallery/Gallery'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import Mailinglist from '@/components/mailinglist/Mailinglist'
+import Anniversary from '@/components/anniversary/Anniversary'
 
 export default function Home() {
     return (
         <main className={styles.main}>
             <div className={styles.description}>
+                <Anniversary />
                 <Hero />
                 <Features />
                 <NewsHeadline />

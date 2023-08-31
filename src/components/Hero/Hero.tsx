@@ -13,7 +13,7 @@ function Hero() {
                         <ExportedImage
                             src={impressLogo}
                             alt="Impressionable Gifts"
-                            placeholder="blur"
+                            placeholder="empty"
                             className={styles.heroImage}
                             priority
                         />

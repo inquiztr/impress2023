@@ -1,0 +1,59 @@
+.bannerStar {
+    color: #fff;
+    fill: rgb(0 0 0 / 31%);
+    transform: rotate(345deg) scale(2.5);
+    position: absolute;
+    top: 73px;
+    right: 25px;
+    display: none;
+    @media (min-width: 560px) {
+        display: block;
+    }
+}
+.bannerStarSmall {
+    color: #fff;
+    fill: #bd006f;
+    right: -10px;
+    top: 42px;
+    position: absolute;
+    transform: rotate(69deg) scale(0.5);
+}
+.bannerStarVerySmall {
+    color: #fff;
+    fill: #bd006f;
+    right: 109px;
+    top: 54px;
+    position: absolute;
+    transform: rotate(69deg) scale(0.2);
+}
+.bannerStarVeryVerySmall {
+    color: #fff;
+    fill: #bd006f;
+    right: 35px;
+    top: 25px;
+    position: absolute;
+    transform: rotate(69deg) scale(0.22);
+}
+.anniversary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.anniversaryWrap {
+    background-color: #bd006f;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    transform: rotate(25deg);
+    position: absolute;
+    right: -120px;
+    top: 91px;
+    padding: 0 51px;
+    width: 400px;
+    text-align: center;
+    z-index: 2;
+}
