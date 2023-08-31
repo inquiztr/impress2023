@@ -1,10 +1,17 @@
 import styles from './hero.module.scss'
 import impressLogo from './impress-logo2.png'
 import ExportedImage from 'next-image-export-optimizer'
+import bg from '/public/hero-bg1.jpg'
 function Hero() {
     return (
         <>
             <section id="hero" className={styles.hero}>
+                <ExportedImage
+                    src={bg}
+                    alt=""
+                    className={styles.heroBG}
+                    width="400"
+                />
                 <div className={styles.heroWrap}>
                     <h1 className={styles.heroImage}>
                         <span className="visually-hidden">
