@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect } from 'react'
 import styles from './newsheadline.module.scss'
-import headlineImage from './savethedate2.jpg'
 import ExportedImage from 'next-image-export-optimizer'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css'
