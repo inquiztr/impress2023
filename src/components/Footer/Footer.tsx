@@ -107,7 +107,7 @@ function Footer() {
                         </svg>
                         <h2>Contact Us</h2>
                         <a href="tel:905-271-8999">905.271.8999</a>
-                        <a href="mailto:mailto:impressgifts@on.aibn.com">
+                        <a href="mailto:impressgifts@on.aibn.com">
                             impressgifts@on.aibn.com
                         </a>
                     </section>

@@ -11,8 +11,11 @@
 
 .heroImage {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 77px;
     display: flex;
+    @media (min-width: 560px) {
+        margin-top: 40px;
+    }
     img {
         margin: 0 auto;
         max-width: 100%;
@@ -47,6 +50,7 @@
         max-width: 480px;
         p {
             font-size: 14px;
+            color: #fff;
         }
     }
     @media (min-width: 768px) {

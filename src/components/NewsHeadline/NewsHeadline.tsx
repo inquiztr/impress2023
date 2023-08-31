@@ -56,9 +56,9 @@ function NewsHeadline() {
                     </div>
                     <div className={styles.col2}>
                         <h5 className="fontMont">
-                            Winner, Entrepreneur of the Year
+                            Community Votes Mississauga 2023 Winner
                         </h5>
-                        <p>Ward 1 Excellence Award, Mississauga 2023</p>
+                        <p>Ward 1 Excellence Award</p>
                     </div>
                     <div className={styles.col3} id="newsgallery">
                         <a
