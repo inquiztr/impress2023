@@ -3,15 +3,15 @@ import React, { useEffect } from 'react'
 import styles from './gallery.module.scss'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css'
-//import grey from '../../../public/grey.png'
-import aa from './june02.jpg'
-import bb from './june03.jpg'
-import cc from './june04.jpg'
-import dd from './june05.jpg'
-import ee from './june06.jpg'
-import ff from './june07.jpg'
-import gg from './june08.jpg'
-import hh from './june09.jpg'
+
+import aaa from './merch01.jpg'
+import bbb from './merch02.jpg'
+import ccc from './merch03.jpg'
+import ddd from './merch04.jpg'
+import eee from './merch05.jpg'
+import fff from './merch06.jpg'
+import ggg from './merch07.jpg'
+import hhh from './merch08.jpg'
 import ExportedImage from 'next-image-export-optimizer'
 
 function Gallery() {
@@ -40,9 +40,9 @@ function Gallery() {
 
                     <div className={styles.grid} id="aaa">
                         <a
-                            href={aa.src}
-                            data-pswp-width={aa.width}
-                            data-pswp-height={aa.height}
+                            href={aaa.src}
+                            data-pswp-width={aaa.width}
+                            data-pswp-height={aaa.height}
                             key={'g1'}
                             className={styles.image}
                             target="_blank"
@@ -50,7 +50,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products 1"
-                                src={aa}
+                                src={aaa}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -61,9 +61,9 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </a>
                         <a
-                            href={bb.src}
-                            data-pswp-width={bb.width}
-                            data-pswp-height={bb.height}
+                            href={bbb.src}
+                            data-pswp-width={bbb.width}
+                            data-pswp-height={bbb.height}
                             key={'g2'}
                             target="_blank"
                             rel="noreferrer"
@@ -71,7 +71,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products 2"
-                                src={bb}
+                                src={bbb}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -83,16 +83,16 @@ function Gallery() {
                         </a>
                         <a
                             className={styles.image}
-                            href={cc.src}
-                            data-pswp-width={cc.width}
-                            data-pswp-height={cc.height}
+                            href={ccc.src}
+                            data-pswp-width={ccc.width}
+                            data-pswp-height={ccc.height}
                             key={'g3'}
                             target="_blank"
                             rel="noreferrer"
                         >
                             <ExportedImage
                                 alt="store products"
-                                src={cc}
+                                src={ccc}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -103,9 +103,9 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </a>
                         <a
-                            href={dd.src}
-                            data-pswp-width={dd.width}
-                            data-pswp-height={dd.height}
+                            href={ddd.src}
+                            data-pswp-width={ddd.width}
+                            data-pswp-height={ddd.height}
                             key={'g4'}
                             target="_blank"
                             rel="noreferrer"
@@ -113,7 +113,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products"
-                                src={dd}
+                                src={ddd}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -124,9 +124,9 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </a>
                         <a
-                            href={ee.src}
-                            data-pswp-width={ee.width}
-                            data-pswp-height={ee.height}
+                            href={eee.src}
+                            data-pswp-width={eee.width}
+                            data-pswp-height={eee.height}
                             key={'g5'}
                             target="_blank"
                             rel="noreferrer"
@@ -134,7 +134,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products"
-                                src={ee}
+                                src={eee}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -145,9 +145,9 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </a>
                         <a
-                            href={ff.src}
-                            data-pswp-width={ff.width}
-                            data-pswp-height={ff.height}
+                            href={fff.src}
+                            data-pswp-width={fff.width}
+                            data-pswp-height={fff.height}
                             key={'g6'}
                             target="_blank"
                             rel="noreferrer"
@@ -155,7 +155,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products"
-                                src={ff}
+                                src={fff}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -166,9 +166,9 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </a>
                         <a
-                            href={gg.src}
-                            data-pswp-width={gg.width}
-                            data-pswp-height={gg.height}
+                            href={ggg.src}
+                            data-pswp-width={ggg.width}
+                            data-pswp-height={ggg.height}
                             key={'g7'}
                             target="_blank"
                             rel="noreferrer"
@@ -176,7 +176,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products"
-                                src={gg}
+                                src={ggg}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
@@ -187,9 +187,9 @@ function Gallery() {
                             <div className={styles.overlay}></div>
                         </a>
                         <a
-                            href={hh.src}
-                            data-pswp-width={hh.width}
-                            data-pswp-height={hh.height}
+                            href={hhh.src}
+                            data-pswp-width={hhh.width}
+                            data-pswp-height={hhh.height}
                             key={'g8'}
                             target="_blank"
                             rel="noreferrer"
@@ -197,7 +197,7 @@ function Gallery() {
                         >
                             <ExportedImage
                                 alt="store products"
-                                src={hh}
+                                src={hhh}
                                 placeholder="blur"
                                 width="250"
                                 height="250"
