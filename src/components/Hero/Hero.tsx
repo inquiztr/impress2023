@@ -12,6 +12,7 @@ function Hero() {
                     className={styles.heroBG}
                     fill={true}
                     placeholder="blur"
+                    priority={true}
                     unoptimized={true}
                 />
                 <div className={styles.heroWrap}>
