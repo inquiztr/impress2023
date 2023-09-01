@@ -10,7 +10,9 @@ function Hero() {
                     src={bg}
                     alt=""
                     className={styles.heroBG}
-                    width="400"
+                    fill={true}
+                    placeholder="blur"
+                    unoptimized={true}
                 />
                 <div className={styles.heroWrap}>
                     <h1 className={styles.heroImage}>
