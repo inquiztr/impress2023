@@ -13,7 +13,8 @@ function Hero() {
                     fill={true}
                     placeholder="blur"
                     priority={true}
-                    unoptimized={true}
+                    quality={85}
+                    // unoptimized={true}
                 />
                 <div className={styles.heroWrap}>
                     <h1 className={styles.heroImage}>
