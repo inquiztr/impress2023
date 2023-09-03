@@ -89,7 +89,7 @@
                 }
             }
             .spacer {
-                width: 40px;
+                width: 38px;
             }
             a {
                 margin: 0;
@@ -101,14 +101,16 @@
                 line-height: 38px;
                 text-decoration: none;
                 color: #fff;
-                font-size: 11px;
+                font-size: 12px;
                 font-weight: 600;
                 transition: color 0.3s ease-in-out;
                 &:hover {
-                    color: #ff78b9;
+                    color: #ff8fc5;
+                    font-weight: bold;
                 }
                 &.active {
-                    color: #ff78b9;
+                    color: #ff8fc5;
+                    font-weight: bold;
                 }
             }
         }

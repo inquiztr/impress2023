@@ -32,7 +32,7 @@ function Hero() {
                     <div className={styles.featureRowRight}>
                         <ExportedImage
                             src={store1}
-                            className={`${styles.heroImage} ${styles.featureImages}`}
+                            className={`${styles.featureImages}`}
                             alt="Photo of store shelving full of new weekly products"
                             width={418}
                             height={314}
@@ -64,7 +64,7 @@ function Hero() {
                         <ExportedImage
                             src={store2}
                             alt="Photo of other store shelving full of new weekly products"
-                            className={`${styles.heroImage} ${styles.featureImages}`}
+                            className={` ${styles.featureImages}`}
                             width={1280}
                             height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -94,7 +94,7 @@ function Hero() {
                         <ExportedImage
                             src={store3}
                             alt="Photo of new weekly products"
-                            className={`${styles.heroImage} ${styles.featureImages}`}
+                            className={`${styles.featureImages}`}
                             width={1280}
                             height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

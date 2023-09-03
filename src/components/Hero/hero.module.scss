@@ -12,7 +12,6 @@
     height: 100%;
     right: 0;
     bottom: 0;
-    object-fit: cover;
     object-position: center;
     z-index: -1;
 }
@@ -59,7 +58,7 @@
         font-size: 13px;
         line-height: 24px;
         margin-bottom: 45px;
-        color: #fff;
+        color: #a3a3a3;
     }
     @media (min-width: 480px) {
         max-width: 480px;

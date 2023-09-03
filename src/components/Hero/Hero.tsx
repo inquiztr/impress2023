@@ -1,7 +1,7 @@
 import styles from './hero.module.scss'
 import impressLogo from './impress-logo2.png'
 import ExportedImage from 'next-image-export-optimizer'
-import bg from '/public/hero-bg1.jpg'
+import bg from '/public/hero-bg2.jpg'
 function Hero() {
     return (
         <>
@@ -10,11 +10,12 @@ function Hero() {
                     src={bg}
                     alt=""
                     className={styles.heroBG}
-                    fill={true}
+                    fill
+                    sizes="100vw"
                     placeholder="blur"
                     priority={true}
-                    quality={85}
-                    // unoptimized={true}
+                    unoptimized
+                    style={{ objectFit: 'cover' }}
                 />
                 <div className={styles.heroWrap}>
                     <h1 className={styles.heroImage}>
