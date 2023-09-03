@@ -54,6 +54,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -75,6 +76,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -96,6 +98,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -117,6 +120,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -138,6 +142,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -159,6 +164,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -180,6 +186,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}
@@ -201,6 +208,7 @@ function Gallery() {
                                 placeholder="blur"
                                 width="250"
                                 height="250"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 style={{
                                     objectFit: 'cover',
                                 }}

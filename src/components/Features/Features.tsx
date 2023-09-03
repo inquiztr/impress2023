@@ -34,8 +34,6 @@ function Hero() {
                             src={store1}
                             className={`${styles.featureImages}`}
                             alt="Photo of store shelving full of new weekly products"
-                            width={418}
-                            height={314}
                             style={{
                                 width: '100%',
                                 height: 'auto',
@@ -65,8 +63,6 @@ function Hero() {
                             src={store2}
                             alt="Photo of other store shelving full of new weekly products"
                             className={` ${styles.featureImages}`}
-                            width={1280}
-                            height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{
                                 width: '100%',
@@ -95,8 +91,6 @@ function Hero() {
                             src={store3}
                             alt="Photo of new weekly products"
                             className={`${styles.featureImages}`}
-                            width={1280}
-                            height={960}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{
                                 width: '100%',
