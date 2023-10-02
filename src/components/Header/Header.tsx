@@ -42,7 +42,6 @@ export default function Header() {
                             height="53"
                             priority
                             placeholder="empty"
-                            className={styles.logoImage}
                         />
                     </Link>
                 </div>
