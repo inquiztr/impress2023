@@ -21,7 +21,7 @@ export default function Header() {
         mediaQueryList.addEventListener('change', handleChange)
         return () => mediaQueryList.removeEventListener('change', handleChange)
     }, [])
-    // test commit 2
+    // test commit 3
     useEffect(() => {
         // close mobile nav when pressing a nav link
         const handleRouteChangeStart = () => {
