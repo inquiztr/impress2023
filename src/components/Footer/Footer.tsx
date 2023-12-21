@@ -58,7 +58,7 @@ function Footer() {
                             </li>
                             <li>
                                 <span className={styles.day}>Thurs & Fri:</span>
-                                <span className={styles.time}>11AM - 7PM</span>
+                                <span className={styles.time}>11AM - 8PM</span>
                             </li>
                             <li>
                                 <span className={styles.day}>Sat:</span>
