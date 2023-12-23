@@ -39,18 +39,11 @@ function Footer() {
                             Mississauga, Ontario <br />
                             L5G 1E1
                         </address>
-                        <h2
-                            style={{
-                                textTransform: 'uppercase',
-                                marginTop: '10px',
-                            }}
-                        >
-                            Extended Store Hours
-                        </h2>
-                        <ul style={{ marginBottom: '10px' }}>
+
+                        <ul style={{ marginBottom: '10px', marginTop: '10px' }}>
                             <li>
                                 <span className={styles.day}>Mon:</span>
-                                <span className={styles.time}>12PM - 5PM</span>
+                                <span className={styles.time}>Closed</span>
                             </li>
                             <li>
                                 <span className={styles.day}>Tues & Wed:</span>
@@ -58,7 +51,7 @@ function Footer() {
                             </li>
                             <li>
                                 <span className={styles.day}>Thurs & Fri:</span>
-                                <span className={styles.time}>11AM - 8PM</span>
+                                <span className={styles.time}>11AM - 7PM</span>
                             </li>
                             <li>
                                 <span className={styles.day}>Sat:</span>
