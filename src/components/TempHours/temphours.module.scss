@@ -1,0 +1,33 @@
+.temphours {
+    // width: 300px;
+    font-size: 12px;
+    background: #fff;
+    // margin: 50px auto;
+    position: relative;
+}
+.boxContainer {
+    margin-top: -20px;
+    width: 300px;
+    background: #c4186e;
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    left: calc(50% - 150px);
+    box-shadow: 1px 1px 6px #393939;
+    border: 3px solid #fff;
+    border-radius: 60px;
+}
+.title {
+    color: #222;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+.days {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 500;
+}

@@ -6,6 +6,7 @@ import Gallery from '@/components/Gallery/Gallery'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import Mailinglist from '@/components/mailinglist/Mailinglist'
 import Anniversary from '@/components/anniversary/Anniversary'
+import TempHours from '@/components/TempHours/TempHours'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <div className={styles.description}>
                 <Anniversary />
                 <Hero />
+                <TempHours />
                 <Features />
                 <NewsHeadline />
                 <Gallery />
