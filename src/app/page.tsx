@@ -14,7 +14,7 @@ export default function Home() {
             <div className={styles.description}>
                 <Anniversary />
                 <Hero />
-                <TempHours />
+                {/* <TempHours /> */}
                 <Features />
                 <NewsHeadline />
                 <Gallery />
