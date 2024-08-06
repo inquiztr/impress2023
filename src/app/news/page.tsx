@@ -12,6 +12,7 @@ import pic07 from './pic07.jpg'
 import pic08 from './pic08.jpg'
 import pic09 from './pic09.jpg'
 import pic10 from './pic10.png'
+import pic11 from './2023communitywinner.jpg'
 import savethedate from './savethedate2.jpg'
 
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
@@ -48,6 +49,35 @@ export default function Home() {
                 <h1 className="fontMont">News</h1>
 
                 <div className={styles.newsList} id="gallery">
+                    <div className={styles.newsItem}>
+                        <div className={styles.left}>
+                            <h2 className="fontMont">
+                                Community Votes Mississauga 2023 Winner
+                            </h2>
+                            <p>
+                                4th Annual Ward 1 Community Excellence Awards
+                                <br />
+                                October 2023
+                            </p>
+                        </div>
+                        <div className={styles.right}>
+                            <a
+                                href={pic11.src}
+                                data-pswp-width={pic11.width}
+                                data-pswp-height={pic11.height}
+                                key={'news01'}
+                                className={styles.image}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <ExportedImage
+                                    src={pic11}
+                                    alt="Mississauga 2023 Winner - Excellence Award"
+                                    width="100"
+                                />
+                            </a>
+                        </div>
+                    </div>
                     <div className={styles.newsItem}>
                         <div className={styles.left}>
                             <h2 className="fontMont">
