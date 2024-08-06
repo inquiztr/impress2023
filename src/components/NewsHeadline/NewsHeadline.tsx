@@ -55,10 +55,8 @@ function NewsHeadline() {
                         </svg> */}
                     </div>
                     <div className={styles.col2}>
-                        <h5 className="fontMont">
-                            Community Votes Mississauga 2024 Winner
-                        </h5>
-                        <p>Ward 1 Excellence Award</p>
+                        <h5 className="fontMont">Community Votes</h5>
+                        <p>Mississauga 2024 Winner</p>
                     </div>
                     <div className={styles.col3} id="newsgallery">
                         <a
