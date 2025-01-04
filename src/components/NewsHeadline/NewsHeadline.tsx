@@ -4,7 +4,7 @@ import styles from './newsheadline.module.scss'
 import ExportedImage from 'next-image-export-optimizer'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css'
-import communitywinner from './2024communitywinner.jpg'
+import readerschoice from './2024readerschoice.jpg'
 
 function NewsHeadline() {
     useEffect(() => {
@@ -55,22 +55,24 @@ function NewsHeadline() {
                         </svg> */}
                     </div>
                     <div className={styles.col2}>
-                        <h5 className="fontMont">Community Votes</h5>
-                        <p>Mississauga 2024 Winner</p>
+                        <h5 className="fontMont">
+                            The Readers Choice 2024 Diamond & Platinum Winner
+                        </h5>
+                        <p>Thank you for your votes and support!</p>
                     </div>
                     <div className={styles.col3} id="newsgallery">
                         <a
-                            href={communitywinner.src}
-                            data-pswp-width={communitywinner.width}
-                            data-pswp-height={communitywinner.height}
+                            href={readerschoice.src}
+                            data-pswp-width={readerschoice.width}
+                            data-pswp-height={readerschoice.height}
                             key={'news1'}
                             className={styles.image}
                             target="_blank"
                             rel="noreferrer"
                         >
                             <ExportedImage
-                                src={communitywinner}
-                                alt="Mississauga Ward 1 Excellence Award 2024 Winner"
+                                src={readerschoice}
+                                alt="The Mississauga News Readers Choice Award Winner"
                                 width="100"
                             />
                         </a>

@@ -13,7 +13,7 @@ import pic08 from './pic08.jpg'
 import pic09 from './pic09.jpg'
 import pic10 from './pic10.png'
 import pic11 from './2023communitywinner.jpg'
-import pic12 from './2024communitywinner.jpg'
+import pic12 from './2024readerschoice.jpg'
 import savethedate from './savethedate2.jpg'
 
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
