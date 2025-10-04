@@ -15,6 +15,7 @@ import pic10 from './pic10.png'
 import pic11 from './2023communitywinner.jpg'
 import pic12 from './2024readerschoice.jpg'
 import pic13 from './2025communitywinner.jpg'
+import pic14 from './2025diaperdrive.jpg'
 
 import savethedate from './savethedate2.jpg'
 
@@ -52,6 +53,36 @@ export default function Home() {
                 <h1 className="fontMont">News</h1>
 
                 <div className={styles.newsList} id="gallery">
+                    <div className={styles.newsItem}>
+                        <div className={styles.left}>
+                            <h2 className="fontMont">
+                                15<sup>th</sup> Annual Diaper Drive
+                            </h2>
+                            <p>
+                                October 1<sup>st</sup> - 15<sup>th</sup>
+                                <br />
+                                Help Cover the Needs of Our Community&#39;s
+                                Littlest Ones
+                            </p>
+                        </div>
+                        <div className={styles.right}>
+                            <a
+                                href={pic14.src}
+                                data-pswp-width={pic14.width}
+                                data-pswp-height={pic14.height}
+                                key={'news01'}
+                                className={styles.image}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <ExportedImage
+                                    src={pic14}
+                                    alt="The Mississauga News Readers Choice 2024 Winner"
+                                    width="100"
+                                />
+                            </a>
+                        </div>
+                    </div>
                     <div className={styles.newsItem}>
                         <div className={styles.left}>
                             <h2 className="fontMont">
