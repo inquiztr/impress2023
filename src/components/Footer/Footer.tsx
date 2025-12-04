@@ -39,11 +39,18 @@ function Footer() {
                             Mississauga, Ontario <br />
                             L5G 1E1
                         </address>
-
+                        <h2
+                            style={{
+                                textTransform: 'uppercase',
+                                marginTop: '10px',
+                            }}
+                        >
+                            Extended Holiday Store Hours
+                        </h2>
                         <ul style={{ marginBottom: '10px', marginTop: '10px' }}>
                             <li>
                                 <span className={styles.day}>Mon:</span>
-                                <span className={styles.time}>Closed</span>
+                                <span className={styles.time}>12PM - 5PM</span>
                             </li>
                             <li>
                                 <span className={styles.day}>Tues & Wed:</span>
@@ -51,15 +58,15 @@ function Footer() {
                             </li>
                             <li>
                                 <span className={styles.day}>Thurs & Fri:</span>
-                                <span className={styles.time}>11AM - 7PM</span>
+                                <span className={styles.time}>11AM - 8PM</span>
                             </li>
                             <li>
                                 <span className={styles.day}>Sat:</span>
-                                <span className={styles.time}>11AM - 6PM</span>
+                                <span className={styles.time}>10AM - 6PM</span>
                             </li>
                             <li>
                                 <span className={styles.day}>Sun:</span>
-                                <span className={styles.time}>Closed</span>
+                                <span className={styles.time}>12PM - 5PM</span>
                             </li>
                         </ul>
                     </section>
@@ -107,7 +114,7 @@ function Footer() {
                 </div>
             </div>
             <div className={styles.copyright}>
-                © 2024 Impressionable Gifts | Design by{' '}
+                © 2025 Impressionable Gifts | Design by{' '}
                 <a href="https://www.sanborg.com/" rel="nofollow">
                     Sanborg
                 </a>

@@ -16,7 +16,7 @@ export default function Home() {
                 <Hero />
                 {/* <TempHours /> */}
                 <Features />
-                <NewsHeadline />
+                {/* <NewsHeadline /> */}
                 <Gallery />
                 <Testimonial />
                 <Mailinglist />
