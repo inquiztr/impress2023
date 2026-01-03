@@ -70,7 +70,7 @@ export default function Header() {
                             <Link href="/#gallery">Gallery</Link>
                         </li>
                         <li className="fontMont">
-                            <Link href="/#footer">Contact Us</Link>
+                            <a href="/#footer">Contact Us</a>
                         </li>
                         <li className={styles.spacer}></li>
                         <li className={styles.logos}>
